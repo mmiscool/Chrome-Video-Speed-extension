@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+
+  "name": "Set Video Speed Globally",
+  "description": "By MMISCOOL",
+  "version": "1.0",
+
+  "browser_action": {
+   "default_icon": "icon.png",
+   "default_popup": "popup.html"
+  },
+  
+  "content_scripts": [
+  {
+  "matches": ["<all_urls>"],
+  "js": ["content.js"]
+  },
+  
+  {
+  "matches": ["<all_urls>"],
+  "all_frames": true,
+  "js": ["content.js"]
+  }
+  
+  
+  
+  
+  
+  ],
+  
+  "permissions": [
+
+	  "https://*/*",
+	  "http://*/*",
+	  "storage"
+   ]
+}
